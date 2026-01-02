@@ -3,50 +3,47 @@
 Proyek ini merupakan simulasi sistem IoT sederhana untuk membaca data sensor 
 dan mengirimkan data melalui protokol MQTT menggunakan ESP32 (simulasi Wokwi).
 
----
 
-## 🔧 Tools yang Digunakan
+
+# Tools yang Digunakan
 - ESP32 (Simulasi Wokwi)
 - HiveMQ MQTT Broker
-- HiveMQ Websocket Client
-- Arduino IDE / PlatformIO
 - GitHub
 
----
 
-## 🏗️ Arsitektur Sistem
+
+# Arsitektur Sistem
 ESP32 (Simulasi) → MQTT Broker (HiveMQ) → Client Subscriber
 
+
+# Konfigurasi MQTT
+Host   :  
+Port   : 8883  
+Topic  : iot/tugas/sensor  
+
 ---
 
-## 🌐 Konfigurasi MQTT
-Host   : broker.hivemq.com  
-Port   : 1883  
-Topic  : nama/topic/kamu  
-
----
-
-## ▶️ Cara Menjalankan
+# Cara Menjalankan
 1. Buka simulasi Wokwi:
    https://wokwi.com/projects/
 
 2. Jalankan project
 
-3. Buka MQTT Web Client:
-   https://www.hivemq.com/demos/websocket-client/
+3. Buka HiveMQ Web Client:
+   https://console.hivemq.cloud/
 
 4. Connect ke broker
    Host: broker.hivemq.com
-   Port: 8000 (Websocket)
+   Port: 8884 (Websocket)
 
 5. Subscribe ke topic yang sama dengan ESP32
+   iot/tugas//sensor
 
----
 
-## 📸 Bukti Hasil
-(Screenshot MQTT + Wokwi)
+# Bukti Hasil
+Tampilan MQTT.png
+Tampilan Simulasi.png
 
----
 
-## 📎 Link Simulasi
-[https://wokwi.com/projects/xxxxx](https://wokwi.com/projects/451929954206862337)
+# Link Simulasi
+https://wokwi.com/projects/451929954206862337
